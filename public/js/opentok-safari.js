@@ -20092,8 +20092,8 @@ module.exports = {
   "messagingProtocol": "wss",
   "messagingPort": 443,
   "supportSSL": "true",
-  "loggingURLSSL": "http://hlg.tokbox.com/qa",
-  "apiURLSSL": "http://anvil-tbdev.tokbox.com",
+  "loggingURLSSL": "https://hlg.tokbox.com/qa",
+  "apiURLSSL": "https://anvil-tbdev.tokbox.com",
   "minimumVersion": {
     "firefox": 37,
     "chrome": 39
@@ -27539,7 +27539,7 @@ module.exports = function NativeSocket(TheWebSocket, messagingURL, events) {
   this.isClosed = function() {
     return webSocket.readyState === 3;
   };
-  
+
 };
 
 },{"./rumor_message.js":175}],174:[function(require,module,exports){
