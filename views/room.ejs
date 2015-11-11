@@ -28,6 +28,13 @@
             }
           }
         </script>
+        <script>
+          if (window.webkitAudioContext && !window.navigator.webkitGetUserMedia) {
+            document.writeln(
+              '<script src="https://cdn.temasys.com.sg/adapterjs/0.12.x/adapter.debug.js"></scr' + 'ipt>'
+            );
+          }
+        </script>
         <script src="https://tbdev.tokbox.com/v2/js/opentok.js"></script>
         <link rel="stylesheet" href="https://tbdev.tokbox.com/v2/css/TB.css" type="text/css" media="screen" charset="utf-8">
         <script src="/js/lib/opentok-layout-js/opentok-layout.min.js" type="text/javascript" charset="utf-8"></script>
