@@ -20088,12 +20088,12 @@ module.exports = {
   "debug": "true",
   "websiteURL": "http://www.tokbox.com",
   "loggingURL": "http://hlg.tokbox.com/qa",
-  "apiURL": "http://anvil-tbdev.tokbox.com",
+  "apiURL": "http://anvil-tbdev.opentok.com",
   "messagingProtocol": "wss",
   "messagingPort": 443,
   "supportSSL": "true",
   "loggingURLSSL": "https://hlg.tokbox.com/qa",
-  "apiURLSSL": "https://anvil-tbdev.tokbox.com",
+  "apiURLSSL": "https://anvil-tbdev.opentok.com",
   "minimumVersion": {
     "firefox": 37,
     "chrome": 39
