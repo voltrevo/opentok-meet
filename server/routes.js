@@ -76,9 +76,10 @@ module.exports = (app, config, redis, ot, redirectSSL) => {
     res.render('index.ejs');
   });
 
-  app.post('/api/imageSafety', (req, res) => {
+  app.post('/imageSafety', (req, res) => {
     if (!req.files || !req.files.media || !req.files.media.path) {
       res.status('500').send('Didn\'t get expected media file');
+      return;
     }
 
     const binaryImage = fs.createReadStream(req.files.media.path);
